@@ -9,7 +9,7 @@ body{
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #E1E8ED;
   padding: 20px 10px;
   border-bottom-left-radius: 20px ;
   border-bottom-right-radius: 20px ;
@@ -41,7 +41,7 @@ body{
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #11151A;
   color: white;
 }
 
