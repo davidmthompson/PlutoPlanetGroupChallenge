@@ -5,7 +5,7 @@ body{
     padding: 0px;
     font-family: roboto;
     background-color: #11151A;
-    color: #ddd;
+    color: #ffff;
 }
 
 /* Style the header with a grey background and some padding */
@@ -24,6 +24,7 @@ body{
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  margin: 10px;
 }
 
 /* Style the logo link */
@@ -50,19 +51,20 @@ body{
 }
 
 .hero{
-  background-image: url("/assets/Gemini_Generated_Image_80jne080jne080jn.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Gemini_Generated_Image_80jne080jne080jn.png");
   width: 100vw;
   height: 30vw;
   background-repeat: no-repeat;
 
-  opacity: 60%;
+  
+  text-align: center;
 
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius:20px ;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius:60px ;
 }
 
 .hero h1{
-  font-size: 20rem;
+  font-size: 4rem;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -82,3 +84,22 @@ body{
   position: relative;
   bottom: 0px;
 }
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 4 / 1 / 5 / 2; }
+.div8 { grid-area: 4 / 2 / 5 / 3; }
+
