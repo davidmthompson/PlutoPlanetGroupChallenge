@@ -12,9 +12,6 @@ body{
 .header {
   overflow: hidden;
   background-color: #E1E8ED;
-  padding: 20px 10px;
-  border-bottom-left-radius: 20px ;
-  border-bottom-right-radius: 20px ;
 }
 
 /* Style the header links */
@@ -72,4 +69,16 @@ body{
   padding: 100px;
   color: white;
   opacity: 100%;
+}
+
+.footer{
+  
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  position: relative;
+  bottom: 0px;
 }
