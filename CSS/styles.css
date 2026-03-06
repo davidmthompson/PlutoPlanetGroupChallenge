@@ -1,105 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: roboto;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     background-color: #11151A;
-    color: #ffff;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Style the header with a grey background and some padding */
 .header {
-  overflow: hidden;
-  background-color: #E1E8ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1E8ED;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Style the header links */
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  margin: 10px;
+.header .logo img {
+    height: 60px;
+    display: block;
 }
 
-/* Style the logo link */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: #11151A;
-  color: white;
-}
-
-/* Float the link section to the right */
 .header-right {
-  float: right;
+    display: flex;
+    gap: 15px;
 }
 
-.hero{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Gemini_Generated_Image_80jne080jne080jn.png");
-  width: 100vw;
-  height: 30vw;
-  background-repeat: no-repeat;
-
-  
-  text-align: center;
-
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius:60px ;
+.header-right a {
+    color: #11151A;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.hero h1{
-  font-size: 4rem;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  padding: 100px;
-  color: white;
-  opacity: 100%;
+.header-right a:hover {
+    background-color: #cbd5e0;
 }
 
-.footer{
-  
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  position: relative;
-  bottom: 0px;
+.header-right a.active {
+    background-color: #11151A;
+    color: white;
 }
 
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/Gemini_Generated_Image_80jne080jne080jn.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.FactButton {
+    background-color: #B66E53;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.FactButton:hover {
+    transform: scale(1.1);
+}
 
 .parent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
-.div3 { grid-area: 2 / 1 / 3 / 2; }
-.div4 { grid-area: 2 / 2 / 3 / 3; }
-.div5 { grid-area: 3 / 1 / 4 / 2; }
-.div6 { grid-area: 3 / 2 / 4 / 3; }
-.div7 { grid-area: 4 / 1 / 5 / 2; }
-.div8 { grid-area: 4 / 2 / 5 / 3; }
+.div1, .div4, .div5, .div8 {
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4A89A4;
+}
 
+.div4 {
+    background-color: #B66E53;
+}
+
+.parent div img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover; 
+    border-radius: 25px;
+    display: block;
+}
+
+
+.factTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.factTable td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+
+@media (max-width: 900px) {
+    .parent {
+        grid-template-columns: 1fr; 
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+}
