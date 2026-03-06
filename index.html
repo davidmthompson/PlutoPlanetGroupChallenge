@@ -4,86 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pluto Planet</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <script defer src="./js/main.js"></script>
 </head>
 <body>
     <header class="header">
+        <a href="#" class="logo">
+            <img src="/assets/plutologo.png" alt="Pluto Logo">
+        </a>
+        <nav class="header-right">
+            <a href="#" class="active">Home</a>
+            <a href="#">Fast Facts</a>
+            <a href="#">Timeline</a>
+            <a href="#">Comparison</a>
+            <a href="#">Moons</a>
+            <a href="#">Quiz</a>
+        </nav>
+    </header>
 
-            <a href="" class="logo"><img src="/assets/plutologo.png" alt="Pluto Logo" height="100px"></a>
-
-        <div class="header-right">
-
-        <a href="">Home</a>
-
-            <a href="">Fast Facts</a>
-
-            <a href="">Timeline</a>
-
-            <a href="">Comparison</a>
-
-            <a href="">Moons</a>
-
-            <a href="">Quiz</a>
-
-        </div>
-
-
-        </header>
-    </section>
-
-    <!-- hero -->
     <section class="hero">
-        <h1>Pluto</h1>
+        <div class="hero-content">
+            <h1>Pluto: The Underdog of the Kuiper Belt</h1>
+            <h2>A small world with a big heart, located 3.7 billion miles away.</h2>
+            <button class="FactButton">Click For A Random Fact!</button>
+        </div>
     </section>
 
-        <section class="body" id="body">
+    <main>
+        <div class="parent">
+            <div class="div1"> 
+                <h2>Fast Facts</h2>
+                <table class="factTable">
+                    <tr><td>Fact</td><td>Detail</td></tr>
+                    <tr><td><b>Distance</b></td><td>5.9 Billion km</td></tr>
+                    <tr><td><b>Temperature</b></td><td>-232°C (-387°F)</td></tr>
+                    <tr><td><b>Year Length</b></td><td>248 Earth Years</td></tr>
+                    <tr><td><b>Day Length</b></td><td>153 Hours</td></tr>
+                    <tr><td><b>Width</b></td><td>1,473 miles</td></tr>
+                </table>
+            </div>
+            <div class="div2"> 
+                <img src="/assets/Gemini_Generated_Image_c33echc33echc33e.png" alt="Fast fact">
+            </div>
 
+            <div class="div3"> 
+                <img src="/assets/Gemini_Generated_Image_w5gowxw5gowxw5go.png" alt="History">
+            </div>
+            <div class="div4">
+                <h2>History of Pluto</h2>
+                <ul class="timeline-list">
+                    <li><strong>1930:</strong> Discovered by Clyde Tombaugh.</li>
+                    <li><strong>1978:</strong> Moon Charon discovered.</li>
+                    <li><strong>2006:</strong> Reclassified as "Dwarf Planet".</li>
+                    <li><strong>2015:</strong> New Horizons flyby.</li>
+                </ul>
+            </div>
+
+            <div class="div5">
+                <h2>Comparison</h2>
+                <table class="factTable">
+                    <tr><td>Feature</td><td>Pluto</td><td>Earth</td></tr>
+                    <tr><td><b>Type</b></td><td>Dwarf</td><td>Terrestrial</td></tr>
+                    <tr><td><b>Moons</b></td><td>5</td><td>1</td></tr>
+                    <tr><td><b>Gravity</b></td><td>1/15th</td><td>1g</td></tr>
+                </table>
+            </div>
+            <div class="div6">
+                <img src="/assets/Gemini_Generated_Image_qdzpo9qdzpo9qdzp.png" alt="EVP">
+            </div>
             
-        <section class="FastFacts" id="FastFacts">
-            <ul class="ULFF" id="ULFF">
-                <li>Discovered in 1930</li>
-                <li>Takes 248 Earth years to orbit our Sun</li>
-                <li>Days on pluto are 153 Hours roughly 6.4 Earth Days</li>
-                <li>Pluto is 1,473 miles which is smaller than the USA</li>
-                <li>Pluto sometimes closer to the sun then neptune</li>
-            </ul>
-        </section>
+            <div class="div7">
+                <img src="/assets/Gemini_Generated_Image_tq1gjatq1gjatq1g.png" alt="moon">
+            </div>
+            <div class="div8">
+                <h2>Pluto's Moons</h2>
+                <ul>
+                    <li><strong>Charon:</strong> The giant partner.</li>
+                    <li><strong>Styx:</strong> Tiny innermost moon.</li>
+                    <li><strong>Nix:</strong> Reddish surface spot.</li>
+                    <li><strong>Kerberos:</strong> Looks like a potato.</li>
+                    <li><strong>Hydra:</strong> Pure water ice.</li>
+                </ul>
+            </div>
+        </div> 
 
+    
+    </main>
 
-        <section class="Timeline" id="Timeline">
-            <ul class="ULTL" id="ULTL">
-                <li>1930: Clyde Tombaugh discovers Pluto at the Lowell Observatory. </li>
-                <li>1978: Scientists discover Charon, Pluto’s largest moon.</li>
-                <li>2006: The IAU reclassifies Pluto as a "Dwarf Planet."</li>
-                <li>2015: NASA’s New Horizons spacecraft completes its historic flyby.</li>
-                <li>2019: Data reveals Pluto has "Ice Volcanoes" and a liquid ocean beneath its crust.</li>
-            </ul>
-        </section>
-
-
-        <section class="ComparisonToEarth" id="ComparisonToEarth">
-
-        </section>
-
-
-        <section class="MoonsSection" id="MoonsSection">
-
-        </section>
-
-
-        <section class="source" id="source">
-            <p>
-                https://lowell.edu/discover/history-of-pluto/
-            </p>
-        </section>
-    </section>
-
-
-
-    <section class="footer">
+    <footer class="footer">
         <h2>David Thompson</h2>
         <h2>William Vance</h2>
-    </section>
+    </footer>
 </body>
 </html>
